@@ -1,7 +1,7 @@
 # protos-url-shortiner
 
 ```bash
-protoc -I proto proto/sso/sso.proto --go_out=./gen/go/ --go_opt=paths=source_relative --go-grpc_out=./gen/g
+protoc -I proto proto/sso/sso.proto --go_out=./gen/go/ --go_opt=paths=source_relative --go-grpc_out=./gen/go
 ```
 ```
 -I proto — опция -I или —proto_path указывает путь к корневой директории с файлами .proto. Это нужно, чтобы компилятор смог найти импорты, если они есть. В нашем случае это директория proto.
